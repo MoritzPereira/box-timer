@@ -40,8 +40,10 @@ yarn-error.*
 /ios
 /android
 
-# lokale Tool-Konfiguration
+# lokale Tool-/KI-Konfiguration
 .claude/
+AGENTS.md
+CLAUDE.md
 
 # Original-Aufnahmen (Lizenz erlaubt keine Weitergabe der Rohdatei)
 assets/sounds/source/

@@ -73,3 +73,12 @@ Beispiel Amateur (3 × 3:00 / 1:00, Vorbereitung 10 s, Hinweis 10 s):
 | `click.wav` | synthetisch | Holzblock-Klacken (2,35/3,7/5,2 kHz), zweimal im Abstand von 110 ms |
 
 Format: WAV, 44,1 kHz, mono, 16 bit (iOS-Mitteilungen akzeptieren nur WAV/CAF/AIFF).
+
+**Neu erzeugen:** Parameter (Ausschnitt, Tonhöhe, Hall, Lautstärke) in `scripts/cut-sounds.py` anpassen, dann `npm run sounds` (macOS).
+Die Original-MP3 ist laut Pixabay-Lizenz nicht im Repo: [„Boxing Bell Signals“](https://pixabay.com/sound-effects/search/boxing%20bell%20signals/) von freesound_community herunterladen und als `assets/sounds/source/boxing-bell-signals.mp3` ablegen.
+
+## Einschränkungen in Expo Go
+
+- Bei gesperrtem Handy kommt der Standard-Mitteilungston statt der Glocke – die eigenen Sounds gibt es erst im eigenen Build (Development Build / TestFlight).
+- Stumm-Schalter und Fokus/„Nicht stören“ wirken bei gesperrtem Handy auf die Mitteilungen. Ist die App offen, spielt die Glocke auch im Stumm-Modus.
+- iOS erlaubt max. 64 geplante Mitteilungen; die App plant bis zu 60 (≈ 15 Runden am Stück ohne Entsperren).
